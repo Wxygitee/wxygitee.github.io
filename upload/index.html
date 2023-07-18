@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>文件上传和下载2</title>
+</head>
+<body>
+    <h1>文件上传和下载</h1>
+    <form id="uploadForm" action="http://gz.xiaoyuarms.com/upload" method="POST" enctype="multipart/form-data">
+        <input type="file" name="file" id="fileInput">
+        <input type="submit" value="上传">
+    </form>
+    <button id="downloadButton">下载文件</button>
+
+    <script>
+        document.getElementById('downloadButton').addEventListener('click', function() {
+            window.location.href = 'http://gz.xiaoyuarms.com/download';
+        });
+    </script>
+</body>
+</html>
